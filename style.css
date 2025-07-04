@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 90%;
+  max-width: 550px;
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+ul.btn-grid {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul.btn-grid li {
+  margin: 10px 0;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+button.correct {
+  background-color: #28a745 !important;
+  color: #fff;
+  border: none;
+}
+
+button.wrong {
+  background-color: #dc3545 !important;
+  color: #fff;
+  border: none;
+}
+
+#next-btn {
+  margin-top: 20px;
+  background: #00c6ff;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#next-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+#score-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#score-container button {
+  background-color: #ff6b81;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#score-container button:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+.hide {
+  display: none;
+}
